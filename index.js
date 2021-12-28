@@ -9,7 +9,7 @@ const DTSnumber=[];
 const email=[];
 const verifiedcomp=[]
 app.get("/",(req,res)=>{
-    res.send("API DEVELOPMENT");
+    res.send("please use /verifiedcompanies to use the api");
 })
 
 
