@@ -4,16 +4,17 @@ const cheerio=require("cheerio");
 const { contains } = require("cheerio/lib/static");
 const express = require("express");
 const app=express();
-const companiesname=[];
-const DTSnumber=[];
-const email=[];
-const verifiedcomp=[]
+
 app.get("/",(req,res)=>{
     res.send("please use /verifiedcompanies to use the api");
 })
 
 
 app.get("/verifiedcompanies",async(req,res)=>{
+  const companiesname=[];
+const DTSnumber=[];
+const email=[];
+const verifiedcomp=[]
   await  axios.get("https://visa.nadra.gov.pk/list-of-tour-operators/").then((res)=>{ 
      const html=res.data;
    const $=cheerio.load(html);
