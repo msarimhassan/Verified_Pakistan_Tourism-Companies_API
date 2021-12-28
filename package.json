@@ -1,0 +1,17 @@
+{
+  "name": "verified-companies-api",
+  "version": "1.0.0",
+  "description": "created an web-scraper tool to get all the verified companies data ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Sarim Hassan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
