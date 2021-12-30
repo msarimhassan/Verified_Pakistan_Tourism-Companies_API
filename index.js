@@ -1,9 +1,12 @@
 const PORT=process.env.PORT || 8000;
 const axios=require("axios");
 const cheerio=require("cheerio");
+const cors=require("cors");
 const { contains } = require("cheerio/lib/static");
 const express = require("express");
 const app=express();
+
+app.use(cors()); 
 
 app.get("/",(req,res)=>{
     res.send("please use /verifiedcompanies to use the api");
